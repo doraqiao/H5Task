@@ -1,0 +1,277 @@
+html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,footer,form{
+    margin:0;
+    padding:0;
+}
+
+/*顶部*/
+.header{
+    width: 100%;
+    height: 68px;
+    background:#2E2E2E;
+}
+.header >a >img{
+    float: left;
+    width: 141px;
+    height: 31px;
+    margin: 19px 0 0 122px;
+}
+.header >nav >a{
+    float: left;
+    width: 100px;
+    height: 68px;
+    line-height: 68px;
+    text-align:center;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.header >nav >.home{
+    margin-left: 649px;
+}
+.header >nav >a:hover{
+    background: #d9534f;
+    color: #444444;
+}
+
+/*banner区域,使用绝对定位，对文字进行定位*/
+.banner{
+    height: 514px;
+    width:100%;
+    position:relative;
+}
+.banner >img{
+    height: 514px;
+    width: 100%;
+}
+.banner >h1{
+    position: absolute;
+    width: 680px;
+    top: 195px;
+    left: 50%;
+    margin-left: -340px;
+    font-size: 56px;
+    color: #ffffff;
+    font-weight: normal;
+    word-spacing: 29px;
+}
+.banner >p{
+    position: absolute;
+    top: 276px;
+    left: 50%;
+    margin-left: -200px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/*portfolio区域*/
+.portfolio{
+    height: 770px;
+    width: 100%;
+}
+.portfolio >h1{
+    text-align: center;
+    font-size: 48px;
+    font-family:"Microsoft YaHei UI";
+    color: #f46208;
+    font-weight: normal;
+    margin-top: 90px;
+}
+.portfolio >p{
+    width: 700px;
+    text-align: center;
+    font-size: 14px;
+    margin:0 auto;
+    font-family:"Microsoft YaHei UI";
+    padding: 30px 0 10px 0 ;
+}
+.portfolio >ul{
+    width: 400px;
+    height: auto;
+    margin:0 auto;
+}
+.portfolio >ul >li{
+    width: auto;
+    float:left;
+    color: #f46208;
+    font-size: 16px;
+    font-family:"Microsoft YaHei UI";
+    border:1px solid #f46208;
+    text-align:center;
+    list-style: none;
+    margin:40px 0 40px 10px;
+    padding: 6px;
+}
+.portfolio >ul >li:hover{
+    background: #f46208;
+    color: #ffffff;
+    cursor:pointer;
+}
+.portfolio >img{
+    width: 100%;
+    height: 426px;
+}
+
+/*Stats区域*/
+.stats{
+    width: 100%;
+    height: 400px;
+}
+.stats >h1{
+    text-align: center;
+    font-size: 48px;
+    font-family:"Microsoft YaHei UI";
+    color: #f46208;
+    font-weight: normal;
+}
+.stats >p{
+    width: 700px;
+    text-align: center;
+    font-size: 14px;
+    margin:0 auto;
+    font-family:"Microsoft YaHei UI";
+    padding: 30px 0;
+}
+.stats >.statsImg{
+    width: 800px;
+    margin: 0 auto;
+}
+.stats >.statsImg >dl{
+    float: left;
+    width: 150px;
+    margin:40px 0 40px 35px;
+}
+.stats >.statsImg >dl >dd{
+    text-align: center;
+}
+.stats >.statsImg >dl >dd >img{
+    height: 40%;
+    width:40%;
+    margin-bottom: 10px;
+}
+.stats >.statsImg >dl >.margins,
+.stats >.statsImg >dl >.completed,
+.stats >.statsImg >dl >.projects,
+.stats >.statsImg >dl >.customers{
+    font-size: 14px;
+    font-family: "Microsoft YaHei UI";
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2E2E2E;
+}
+.stats >.statsImg >dl >dd:last-of-type{
+    font-size: 22px;
+    color:#f46208;
+}
+
+/*Team区域*/
+.team{
+    width: 100%;
+    height: 650px;
+    background-color: #2E2E2E;
+}
+.team >h1{
+    text-align: center;
+    font-size: 48px;
+    font-family:"Microsoft YaHei UI";
+    color: #f46208;
+    font-weight: normal;
+    padding-top: 90px;
+}
+.team >p{
+    width: 700px;
+    text-align: center;
+    font-size: 14px;
+    margin:0 auto;
+    font-family:"Microsoft YaHei UI";
+    color: #ffffff;
+    padding: 30px 0 ;
+}
+.team >.teamImg{
+    width: 900px;
+    margin: 0 auto;
+}
+.team >.teamImg >dl{
+    float: left;
+    width: 300px;
+    margin: 40px 0 10px 0;
+}
+.team >.teamImg >dl >dd >img{
+    height: 70%;
+    width: 70%;
+}
+.team >.teamImg >dl >dd{
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/*contact us区域*/
+.contactUs{
+    height: 606px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contactUs >h1{
+    text-align: center;
+    font-size: 48px;
+    font-family:"Microsoft YaHei UI";
+    color: #f46208;
+    font-weight: normal;
+    padding-top: 70px;
+}
+.contactUs >p{
+    width: 700px;
+    text-align: center;
+    font-size: 14px;
+    margin:0 auto;
+    font-family:"Microsoft YaHei UI";
+    padding: 40px 0 50px 0;
+}
+.contactUs >.contactUsText{
+    height: 320px;
+    width: 800px;
+    margin: 0 auto;
+}
+.contactUs >.contactUsText >.text{
+    width: 380px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.contactUs >.contactUsText >.email{
+    width: 380px;
+    height: 40px;
+    margin: 0 0 20px 20px;
+}
+.contactUs >.contactUsText >textarea{
+    width: 790px;
+    height: 216px;
+    line-height: 216px;
+    margin-bottom: 20px;
+    resize:none;
+}
+.contactUs >.contactUsText >.submit{
+    width: 150px;
+    height: 40px;
+    background: #f46208;
+    color: #ffffff;
+    border:none;
+    font-size: 14px;
+    margin-left: 325px;
+}
+.contactUs >.contactUsText >.submit:hover{
+    cursor:pointer;
+}
+
+/*页脚区*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    line-height: 80px;
+}
+.footer >p{
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
