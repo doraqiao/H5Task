@@ -1,13 +1,13 @@
-html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,footer,form{
+html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,footer{
     margin:0;
     padding:0;
 }
-
 /*顶部*/
 .header{
     width: 100%;
     height: 68px;
     background:#2E2E2E;
+    overflow: hidden;
 }
 .header >a >img{
     float: left;
@@ -37,37 +37,39 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
 /*banner区域,使用绝对定位，对文字进行定位*/
 .banner{
     height: 514px;
-    width:100%;
-    position:relative;
-}
-.banner >img{
-    height: 514px;
     width: 100%;
+    position:relative;
+    background:url("../img/banner.jpg");
+    overflow: hidden;
 }
 .banner >h1{
+    width: 700px;
     position: absolute;
-    width: 680px;
     top: 195px;
     left: 50%;
-    margin-left: -340px;
+    margin-left: -350px;
     font-size: 56px;
     color: #ffffff;
     font-weight: normal;
     word-spacing: 29px;
+    text-align: center;
 }
 .banner >p{
+    width: 600px;
+    text-align: center;
     position: absolute;
     top: 276px;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -300px;
     font-size: 15px;
     color: #ffffff;
 }
 
 /*portfolio区域*/
 .portfolio{
-    height: 770px;
+    height: 720px;
     width: 100%;
+    overflow: hidden;
 }
 .portfolio >h1{
     text-align: center;
@@ -83,10 +85,9 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     font-size: 14px;
     margin:0 auto;
     font-family:"Microsoft YaHei UI";
-    padding: 30px 0 10px 0 ;
 }
 .portfolio >ul{
-    width: 400px;
+    width: 475px;
     height: auto;
     margin:0 auto;
 }
@@ -99,7 +100,7 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     border:1px solid #f46208;
     text-align:center;
     list-style: none;
-    margin:40px 0 40px 10px;
+    margin:40px 0 40px 16px;
     padding: 6px;
 }
 .portfolio >ul >li:hover{
@@ -110,12 +111,14 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
 .portfolio >img{
     width: 100%;
     height: 426px;
+    overflow: hidden;
 }
 
 /*Stats区域*/
 .stats{
     width: 100%;
-    height: 400px;
+    height: 350px;
+    overflow: hidden;
 }
 .stats >h1{
     text-align: center;
@@ -123,6 +126,7 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     font-family:"Microsoft YaHei UI";
     color: #f46208;
     font-weight: normal;
+    margin-top: 60px;
 }
 .stats >p{
     width: 700px;
@@ -130,7 +134,6 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     font-size: 14px;
     margin:0 auto;
     font-family:"Microsoft YaHei UI";
-    padding: 30px 0;
 }
 .stats >.statsImg{
     width: 800px;
@@ -167,8 +170,9 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
 /*Team区域*/
 .team{
     width: 100%;
-    height: 650px;
+    height: 610px;
     background-color: #2E2E2E;
+    overflow: hidden;
 }
 .team >h1{
     text-align: center;
@@ -185,15 +189,14 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     margin:0 auto;
     font-family:"Microsoft YaHei UI";
     color: #ffffff;
-    padding: 30px 0 ;
 }
 .team >.teamImg{
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 .team >.teamImg >dl{
     float: left;
-    width: 300px;
+    width: 333px;
     margin: 40px 0 10px 0;
 }
 .team >.teamImg >dl >dd >img{
@@ -211,6 +214,7 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     height: 606px;
     width: 100%;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 .contactUs >h1{
     text-align: center;
@@ -218,7 +222,7 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     font-family:"Microsoft YaHei UI";
     color: #f46208;
     font-weight: normal;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .contactUs >p{
     width: 700px;
@@ -226,22 +230,22 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     font-size: 14px;
     margin:0 auto;
     font-family:"Microsoft YaHei UI";
-    padding: 40px 0 50px 0;
+    margin-bottom: 50px;
 }
 .contactUs >.contactUsText{
     height: 320px;
     width: 800px;
     margin: 0 auto;
 }
-.contactUs >.contactUsText >.text{
+.contactUs >.contactUsText >.Text{
+    margin:0 0 20px 0;
     width: 380px;
     height: 40px;
-    margin-bottom: 20px;
 }
 .contactUs >.contactUsText >.email{
+    margin:0 0 20px 20px;
     width: 380px;
     height: 40px;
-    margin: 0 0 20px 20px;
 }
 .contactUs >.contactUsText >textarea{
     width: 790px;
@@ -269,6 +273,7 @@ html,head,body,header,a,img,nav,section,h1,p,ul,li,div,dl,dd,input,textarea,foot
     height: 80px;
     background: #000000;
     line-height: 80px;
+    overflow: hidden;
 }
 .footer >p{
     font-size: 14px;
